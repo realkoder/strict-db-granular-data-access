@@ -73,6 +73,9 @@ docker compose down -v
 > Interact with postgresql docker container by cmd: `docker exec -it strictdb psql -U user -d strict_music_database`
 
 ```sql
+-- Check what's up with songs
+SELECT * FROM songs;
+
 -- Try readng from artists -> maybe that's the restriction?
 SELECT * FROM artists;
 
